@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+#game {
+    width: 90%;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    transition: .5s;
+    width: calc(100% / 6 - 20px);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(0.95) !important;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+#startgame {
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
