@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
 * {
-    background-color: rgb(185, 165, 165);
+    font-family: 'Pixelify Sans', cursive;
+    background-color: #945069;
     margin: 0;
 }
 
@@ -12,7 +16,26 @@
 }
 
 h1 {
+    margin-bottom: 50px;
+    margin-top: 35px;
     text-align: center;
+    color: #F2D4DC;
+}
+
+.titlemenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+}
+
+.title {
+    display: inline-block;
+}
+
+#attempts {
+    display: inline-block;
+    align-items: center;
 }
 
 .card {
@@ -24,7 +47,6 @@ h1 {
 
 .card:hover {
     transform: scale(0.95) !important;
-
 }
 
 .btn {
@@ -32,9 +54,35 @@ h1 {
     justify-content: center;
 }
 
-#startgame {
+#restartgame {
+    margin: 0 50px;
+    text-decoration: none;
+    color: #F2D4DC;
     margin-top: 20px;
     text-decoration: none;
-    color: black;
     font-size: 20px;
+    padding: 16px 32px;
+}
+
+#restartgame:hover {
+    background-color: #C76C8E;
+    border-radius: 10px;
+}
+
+#startgame {
+    margin: 0 50px;
+    color: #F2D4DC;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px 32px;
+}
+
+#startgame:hover {
+    background-color: #C76C8E;
+    border-radius: 10px;
+}
+
+.correct {
+    pointer-events: none !important;
 }
