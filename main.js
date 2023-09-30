@@ -36,3 +36,7 @@ startgame.onclick = function() {
         imageNames[i] = saveImage
     }
 }
+
+// card.onclick = function() {
+//     card.style.transform = 'scaleX(0)'
+// }
