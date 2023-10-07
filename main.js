@@ -4,7 +4,6 @@ let startgame = document.getElementById("startgame");
 let cards = document.getElementsByClassName("card");
 let openCards = [];
 let attempts = document.getElementById("attempts");
-let pairs = document.getElementById("pairs");
 let title = document.getElementById("title");
 let a = 0;
 let points = 0;
@@ -69,11 +68,13 @@ for (let i = 0; i < imageNames.length; i++) {
 
 startgame.onclick = function () {
   for (let i = 0; i < imageNames.length; i++) {
+    cards[i].style.pointerEvents = "auto";
     cards[i].style.transform = "scaleX(0)";
     setTimeout(() => {
       cards[i].src = "src/shirt.jpg";
       cards[i].style.transform = "scaleX(1)";
     }, 500);
+    attempts.innerHTML = "";
   }
 
   for (let i = 23; i > 0; i--) {
